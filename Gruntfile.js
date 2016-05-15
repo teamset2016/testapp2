@@ -59,8 +59,8 @@ module.exports = function(grunt) {
     connect: {
       server: {
         options: {
-          hostname: 'localhost',
-          port: 8080
+          hostname: process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1',
+          port: process.env.OPENSHIFT_NODEJS_PORT || 8080,
         }
       }
     },
@@ -129,7 +129,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-bower-task');
   grunt.loadNpmTasks('grunt-karma');
   
-  grunt.registerTask('dev', [ 'bower', 'connect:server', 'watch:dev' ]);
+  grunt.registerTask('default', [ 'bower', 'connect:server', 'watch:dev' ]);
   grunt.registerTask('test', [ 'bower', 'jshint', 'karma:continuous' ]);
   grunt.registerTask('minified', [ 'bower', 'connect:server', 'watch:min' ]);
   grunt.registerTask('package', [ 'bower', 'jshint', 'karma:unit', 'html2js:dist', 'concat:dist', 'uglify:dist', 'clean:temp', 'compress:dist' ]);
