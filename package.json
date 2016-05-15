@@ -9,7 +9,7 @@
     "start": "node node_modules/grunt-cli/bin/grunt"
   },
   "devDependencies": {
-    "git": "^0.1.5",w
+    "git": "^0.1.5",
     "grunt": "^1.0.1",
     "grunt-bower-task": "^0.4.0",
     "grunt-contrib-clean": "^1.0.0",
