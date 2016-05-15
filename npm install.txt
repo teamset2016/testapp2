@@ -1,0 +1,1 @@
+npm install grunt grunt-contrib-jshint grunt-contrib-clean grunt-contrib-connect grunt-contrib-compress grunt-contrib-concat grunt-contrib-uglify grunt-html2js grunt-bower-task grunt-karma grunt-contrib-watch karma-phantomjs-launcher karma-jasmine karma-ng-html2js-preprocessor jasmine-core phantomjs-prebuilt phantomjs
