@@ -5,16 +5,8 @@
     "mongoose": "~3.6.14",
     "express": "~3.3.4"
   },
-  "engines": {
-    "node": "0.10.x",
-    "npm": "1.3.x"
-  },
   "scripts": {
-<<<<<<< HEAD
-    "start": "node grunt"
-=======
-    "start": "node node_modules/grunt/bin"
->>>>>>> e12c8d7c15318569186ff8232b1897041985b08d
+    "start": "node node_modules/grunt-cli/bin/grunt"
   },
   "devDependencies": {
     "git": "^0.1.5",w
