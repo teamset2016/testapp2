@@ -21,6 +21,13 @@
   },
   "devDependencies": {
     
+    "express": "~3.3.4"
+  },
+  "scripts": {
+    "start": "node node_modules/grunt/bin/grunt"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
     "grunt-bower-task": "^0.4.0",
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-compress": "^1.2.0",
